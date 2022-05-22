@@ -1,0 +1,71 @@
+h1{
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    transition: all 0.2s;
+}
+
+h1:hover {
+    color: white;
+    text-shadow: 0 0.1em 0.3em rgb(42, 152, 185);
+    transform: translateY(-0.2em);
+}
+
+#c {
+    height: 40rem;
+}
+
+
+#footer{
+    background-color: #EFF1F3;
+    display: inline;
+    text-align: center;
+}
+
+
+
+#randomButton{
+    font-family: 'Archivo Black', sans-serif;
+    background-color: rgb(70, 169, 250);
+    color: #ffffff;
+    transition: all 0.2s;
+    padding: 1em 0;
+    margin: 0 5em;
+    border: 0 solid rgb(70, 169, 250);
+    border-radius: 2em;
+}
+
+
+#randomButton:hover {
+    background-color: rgb(60, 149, 233);
+    transform: translateY(-0.2em);
+    box-shadow: 0 0.3em 0.2em rgb(181, 181, 182);
+}
+
+#randomButton:active {
+    background-color: rgb(49, 137, 219);
+    transform: translateY(-0.05em);
+    
+}
+
+
+.addsub {
+    font-family: 'Archivo Black', sans-serif;
+    color: rgb(56, 138, 206);
+    transition: all 0.2s;
+    padding: 1em 0;
+    border: 1px solid rgb(56, 138, 206);
+    border-radius: 2em;
+    transition: all 0.2s;
+}
+
+.addsub:hover {
+    background-color: rgb(230, 230, 230);
+    transform: translateY(-0.2em);
+    box-shadow: 0 0.3em 0.2em rgb(209, 209, 209);
+}
+
+.addsub:active {
+    background-color: rgb(187, 187, 187);
+    transform: translateY(-0.05em);
+    
+}
