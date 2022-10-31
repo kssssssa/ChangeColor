@@ -9,6 +9,16 @@ let totalDiv = 3;
 let maxDiv = 10;
 let minDiv = 3;
 
+
+const makeRandColor = () => {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r},${g},${b})`;
+};
+
+
+
 subButton.addEventListener('click', () => {
     if(totalDiv !==  minDiv ){
         colorBox.lastChild.remove();
@@ -33,13 +43,6 @@ if(totalDiv !==  maxDiv ){
 
 })
 
-
-
-
-
-
-
-
 randomButton.addEventListener('click', () => {
     for (let i = 0; i < 10; i++) {
         const newColor = makeRandColor();
@@ -48,10 +51,7 @@ randomButton.addEventListener('click', () => {
 })
 
 
+c[0].style.backgroundColor =  makeRandColor()
+c[1].style.backgroundColor =  makeRandColor()
+c[2].style.backgroundColor =  makeRandColor()
 
-const makeRandColor = () => {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    return `rgb(${r},${g},${b})`;
-};
