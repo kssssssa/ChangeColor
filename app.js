@@ -5,27 +5,43 @@ const colorBox = document.querySelector('#colorBox')
 const addButton = document.querySelector('#addButton')
 const subButton = document.querySelector('#subButton')
 
-addButton.addEventListener('click', () => {
+let totalDiv = 3;
+let maxDiv = 10;
+let minDiv = 3;
 
+subButton.addEventListener('click', () => {
+    if(totalDiv !==  minDiv ){
+        colorBox.lastChild.remove();
+        totalDiv -= 1;
+    }
+})
+
+addButton.addEventListener('click', () => {
+if(totalDiv !==  maxDiv ){
     const newDiv = document.createElement('div')
     colorBox.appendChild(newDiv);
     newDiv.classList.add('col');
     newDiv.style.backgroundColor = makeRandColor();
+    totalDiv+=1;
 
     randomButton.addEventListener('click', () => {
         const addcolor = makeRandColor();
         newDiv.style.backgroundColor = addcolor;
     })
+
+}
+
 })
 
 
 
-subButton.addEventListener('click', () => {
-    colorBox.lastChild.remove();
-})
+
+
+
+
 
 randomButton.addEventListener('click', () => {
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 10; i++) {
         const newColor = makeRandColor();
         c[i].style.backgroundColor = newColor;
     }
